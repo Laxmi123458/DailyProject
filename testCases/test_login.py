@@ -13,3 +13,4 @@ class Test_Logins:
         login_Page.enter_username("Admin")
         login_Page.enter_password("admin123")
         login_Page.click_login()
+        assert "dashboard" in driver.current_url
